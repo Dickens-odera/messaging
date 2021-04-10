@@ -12,16 +12,13 @@ class MessagingServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/views/','dickens');
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
         $this->publishes([
-            __DIR__ . '/views' => resource_path('/views/vendor/dickens')
+            __DIR__ . '/views' => resource_path('/views/vendor/dickens'),
+            __DIR__.'/config/message.php' => config_path('message.php'),
         ]);
 
         $this->mergeConfigFrom(
             __DIR__.'/config/message.php', 'dickens'
         );
-        //publish custom config file
-        $this->publishes([
-            __DIR__.'/config/message.php' => config_path('message.php'),
-        ]);
 
         //publish custom migrations file
         $this->publishes([
