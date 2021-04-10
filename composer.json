@@ -1,0 +1,31 @@
+{
+    "name": "dickens/messaging",
+    "description": "A simple package to say hello",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dickens-odera",
+            "email": "dickensodera9@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/ui": "3.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dickens\\Message\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dickens\\Message\\MessagingServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
