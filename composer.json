@@ -1,6 +1,6 @@
 {
     "name": "dickens/messaging",
-    "description": "A simple package to say hello",
+    "description": "A simple package to send email and store the same on local database",
     "type": "library",
     "license": "MIT",
     "authors": [
